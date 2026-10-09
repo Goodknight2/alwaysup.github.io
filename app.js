@@ -16,40 +16,27 @@ const elements = {
   toast: document.getElementById("toast")
 };
 
-// Initialize App
 async function init() {
   try {
-    const res = await fetch("./data/versions.json?t=" + Date.now());
-    const versions = await res.json();
+    const res = await fetch("./data/manifest.json?t=" + Date.now());
+    const manifest = await res.json();
 
-    elements.versionSelect.innerHTML = versions
-      .map(v => `<option value="${v}">${v}</option>`)
+    // Populate dropdown with all historical dumps
+    elements.versionSelect.innerHTML = manifest.history
+      .map(v => `<option value="${v}">${v} ${v === manifest.current_version ? '(Active)' : ''}</option>`)
       .join("");
 
-    currentVersion = versions[0];
+    // Show Rollback Warning if viewing an older version or if active version isn't the latest dump
+    if (manifest.current_version !== manifest.history[0]) {
+      document.getElementById("rollback-badge").style.display = "inline-block";
+    }
+
+    currentVersion = manifest.current_version;
+    elements.versionSelect.value = currentVersion;
+    
     await loadVersionData(currentVersion);
-
-    // Event Listeners
-    elements.versionSelect.addEventListener("change", e => {
-      currentVersion = e.target.value;
-      rawFileCache = {}; // clear cache on version change
-      loadVersionData(currentVersion);
-    });
-
-    elements.searchInput.addEventListener("input", filterData);
-
-    elements.formatTabs.forEach(tab => {
-      tab.addEventListener("click", () => {
-        elements.formatTabs.forEach(t => t.classList.remove("active"));
-        tab.classList.add("active");
-        currentFormat = tab.dataset.format;
-        switchFormat(currentFormat);
-      });
-    });
-
-    elements.copyRawBtn.addEventListener("click", copyCurrentView);
   } catch (e) {
-    console.error("Failed to initialize tracker site:", e);
+    console.error("Failed to load manifest:", e);
   }
 }
 

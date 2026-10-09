@@ -13,7 +13,6 @@
   <div class="app-container">
     <header class="navbar">
       <div class="brand">
-        <span class="status-indicator online"></span>
         <h1>Roblox Offsets</h1>
       </div>
 
@@ -29,7 +28,7 @@
       <section class="toolbar">
         <div class="search-box">
           <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-          <input type="text" id="search-input" placeholder="Search class, offset name, or hex (e.g. LocalPlayer, 0x120)..." />
+          <input type="text" id="search-input" placeholder="Search class, offset name, or hex" />
         </div>
 
         <div class="format-tabs">
@@ -42,10 +41,20 @@
       </section>
 
       <section class="meta-banner" id="meta-banner">
-        <div class="meta-item"><span>Roblox Version:</span> <strong id="meta-version">-</strong></div>
-        <div class="meta-item"><span>Total Offsets:</span> <strong id="meta-total">-</strong></div>
-        <div class="meta-item"><span>Dumper:</span> <strong id="meta-dumper">-</strong></div>
-        <button id="copy-raw-btn" class="action-btn">Copy Current Format</button>
+        <div class="meta-item">
+            <span>Active Game Version:</span> 
+            <strong id="meta-version">-</strong>
+            <span id="rollback-badge" class="badge warning" style="display: none;">ROLLBACK ACTIVE</span>
+        </div>
+        
+        <div class="direct-downloads">
+            <span>Direct Downloads:</span>
+            <a href="./offsets.h" download class="dl-link">offsets.h</a>[cite: 5]
+            <a href="./structs.h" download class="dl-link">structs.h</a>[cite: 3]
+            <a href="./offsets.json" download class="dl-link">offsets.json</a>[cite: 1]
+            <a href="./offsets.cs" download class="dl-link">offsets.cs</a>[cite: 4]
+            <a href="./offsets.py" download class="dl-link">offsets.py</a>[cite: 2]
+        </div>
       </section>
 
       <!-- Viewer Container -->
