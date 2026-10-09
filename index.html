@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roblox Offsets Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <header class="navbar">
+      <div class="brand">
+        <span class="status-indicator online"></span>
+        <h1>Roblox Offsets</h1>
+      </div>
+
+      <div class="header-controls">
+        <div class="control-group">
+          <label for="version-select">Version:</label>
+          <select id="version-select" class="dropdown"></select>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="toolbar">
+        <div class="search-box">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="search-input" placeholder="Search class, offset name, or hex (e.g. LocalPlayer, 0x120)..." />
+        </div>
+
+        <div class="format-tabs">
+          <button class="tab-btn active" data-format="json">JSON Table</button>
+          <button class="tab-btn" data-format="cpp">offsets.h</button>
+          <button class="tab-btn" data-format="structs">structs.h</button>
+          <button class="tab-btn" data-format="cs">offsets.cs</button>
+          <button class="tab-btn" data-format="py">offsets.py</button>
+        </div>
+      </section>
+
+      <section class="meta-banner" id="meta-banner">
+        <div class="meta-item"><span>Roblox Version:</span> <strong id="meta-version">-</strong></div>
+        <div class="meta-item"><span>Total Offsets:</span> <strong id="meta-total">-</strong></div>
+        <div class="meta-item"><span>Dumper:</span> <strong id="meta-dumper">-</strong></div>
+        <button id="copy-raw-btn" class="action-btn">Copy Current Format</button>
+      </section>
+
+      <!-- Viewer Container -->
+      <section id="content-container">
+        <div id="table-view" class="view-panel active"></div>
+        <pre id="code-view" class="view-panel"><code></code></pre>
+      </section>
+    </main>
+  </div>
+
+  <div id="toast" class="toast">Copied to clipboard!</div>
+  <script src="app.js"></script>
+</body>
+</html>
