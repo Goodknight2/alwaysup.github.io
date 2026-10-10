@@ -3,8 +3,8 @@
  * Created by: Jonah (jonahw on Discord)
  * Github: https://git.jonah.cool/jonah/roblox-dumper
  * Roblox Version: version-cec3ad5889b447cf
- * Time Taken: 37712 ms (37.712000 seconds)
- * Total Offsets: 315
+ * Time Taken: 36315 ms (36.315000 seconds)
+ * Total Offsets: 322
  */
 
 #pragma once
@@ -177,11 +177,10 @@ namespace structs {
         uint8_t DepthMode;  // 0xD0
         char pad_2[0x3];
         float FillTransparency;  // 0xD4
-        char pad_3[0x4];
+        bool Enabled;  // 0xD8
+        char pad_3[0x3];
         float OutlineTransparency;  // 0xDC
-        char pad_4[0x4];
-        bool Enabled;  // 0xE4
-    };  // sizeof = 0xE5
+    };  // sizeof = 0xE0
 
     struct HopperBin {
         char pad_0[0x458];
@@ -322,7 +321,17 @@ namespace structs {
         uint64_t UserId;  // 0xC0
         char pad_1[0x1C0];
         uintptr_t Character;  // 0x288
-    };  // sizeof = 0x290
+        char pad_2[0x38];
+        uintptr_t Team;  // 0x2C8
+        char pad_3[0x7C];
+        uint32_t AccountAge;  // 0x34C
+        char pad_4[0x34];
+        float HealthDisplayDistance;  // 0x384
+        char pad_5[0xC];
+        float NameDisplayDistance;  // 0x394
+        char pad_6[0x8];
+        uint32_t TeamColor;  // 0x3A0
+    };  // sizeof = 0x3A4
 
     struct Players {
         char pad_0[0x120];
@@ -446,15 +455,15 @@ namespace structs {
     };  // sizeof = 0x116D
 
     struct TextLabel {
-        char pad_0[0xB89];
-        bool TextScaled;  // 0xB89
-        char pad_1[0x12E];
+        char pad_0[0xCB8];
         float LineHeight;  // 0xCB8
-        char pad_2[0x44];
+        char pad_1[0x44];
         uint8_t TextYAlignment;  // 0xD00
-        char pad_3[0x57];
+        char pad_2[0x57];
         uint8_t TextDirection;  // 0xD58
-        char pad_4[0x57];
+        char pad_3[0x55];
+        bool TextScaled;  // 0xDAE
+        char pad_4[0x1];
         bool TextWrapped;  // 0xDB0
         char pad_5[0x5];
         bool RichText;  // 0xDB6
