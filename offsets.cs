@@ -3,8 +3,8 @@
  * Created by: Jonah (jonahw on Discord)
  * Github: https://git.jonah.cool/jonah/roblox-dumper
  * Roblox Version: version-cec3ad5889b447cf
- * Time Taken: 37712 ms (37.712000 seconds)
- * Total Offsets: 315
+ * Time Taken: 36315 ms (36.315000 seconds)
+ * Total Offsets: 322
  */
 
 using System;
@@ -134,18 +134,18 @@ namespace RobloxOffsets
 
     public static class Functions
     {
-        public const ulong Clone = 0xFFFF81EB8B541278;
-        public const ulong Destroy = 0xFFFF81EB8B541298;
-        public const ulong FindPartOnRay = 0xFFFF81EB8B620978;
-        public const ulong FindPartOnRayWithIgnoreList = 0xFFFF81EB8B6209F8;
-        public const ulong FindPartOnRayWithWhitelist = 0xFFFF81EB8B620A58;
-        public const ulong FireServer = 0xFFFF81EB8B6BEE78;
+        public const ulong Clone = 0xFFFF825B68741318;
+        public const ulong Destroy = 0xFFFF825B68741338;
+        public const ulong FindPartOnRay = 0xFFFF825B688A0A18;
+        public const ulong FindPartOnRayWithIgnoreList = 0xFFFF825B688A0A98;
+        public const ulong FindPartOnRayWithWhitelist = 0xFFFF825B688A0AF8;
+        public const ulong FireServer = 0xFFFF825B6879EF18;
         public const ulong Print = 0x1C65A30;
         public const ulong RaisePropertyChanged = 0xDEE980;
-        public const ulong Raycast = 0xFFFF81EB8B6206B8;
+        public const ulong Raycast = 0xFFFF825B688A0758;
         public const ulong SetParent = 0xD00010;
         public const ulong SetParentInternal = 0x1CAFEB0;
-        public const ulong Shapecast = 0xFFFF81EB8B620758;
+        public const ulong Shapecast = 0xFFFF825B688A07F8;
     }
 
     public static class GuiBase2D
@@ -183,7 +183,7 @@ namespace RobloxOffsets
     {
         public const ulong Adornee = 0xA8;
         public const ulong DepthMode = 0xD0;
-        public const ulong Enabled = 0xE4;
+        public const ulong Enabled = 0xD8;
         public const ulong FillColor = 0xB8;
         public const ulong FillTransparency = 0xD4;
         public const ulong OutlineColor = 0xC4;
@@ -348,7 +348,14 @@ namespace RobloxOffsets
 
     public static class Player
     {
+        public const ulong AccountAge = 0x34C;
         public const ulong Character = 0x288;
+        public const ulong DisplayName = 0xA8;
+        public const ulong HealthDisplayDistance = 0x384;
+        public const ulong LocaleId = 0x748;
+        public const ulong NameDisplayDistance = 0x394;
+        public const ulong Team = 0x2C8;
+        public const ulong TeamColor = 0x3A0;
         public const ulong UserId = 0xC0;
     }
 
@@ -495,7 +502,7 @@ namespace RobloxOffsets
         public const ulong Text = 0xBA0;
         public const ulong TextColor3 = 0xEB8;
         public const ulong TextDirection = 0xD58;
-        public const ulong TextScaled = 0xB89;
+        public const ulong TextScaled = 0xDAE;
         public const ulong TextSize = 0xEDC;
         public const ulong TextStrokeColor3 = 0xEC4;
         public const ulong TextStrokeTransparency = 0xEE0;
