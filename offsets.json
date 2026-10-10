@@ -4,7 +4,7 @@
     "author": "Jonah (jonahw on Discord)",
     "github": "https://git.jonah.cool/jonah/roblox-dumper",
     "roblox_version": "version-cec3ad5889b447cf",
-    "total_offsets": 315
+    "total_offsets": 322
   },
   "offsets": {
     "AirProperties": {
@@ -94,18 +94,18 @@
       "Function": 128
     },
     "Functions": {
-      "Clone": 18446605447387681400,
-      "Destroy": 18446605447387681432,
-      "FindPartOnRay": 18446605447388596600,
-      "FindPartOnRayWithIgnoreList": 18446605447388596728,
-      "FindPartOnRayWithWhitelist": 18446605447388596824,
-      "FireServer": 18446605447389245048,
+      "Clone": 18446605927838913304,
+      "Destroy": 18446605927838913336,
+      "FindPartOnRay": 18446605927840352792,
+      "FindPartOnRayWithIgnoreList": 18446605927840352920,
+      "FindPartOnRayWithWhitelist": 18446605927840353016,
+      "FireServer": 18446605927839297304,
       "Print": 29776432,
       "RaisePropertyChanged": 14608768,
-      "Raycast": 18446605447388595896,
+      "Raycast": 18446605927840352088,
       "SetParent": 13631504,
       "SetParentInternal": 30080688,
-      "Shapecast": 18446605447388596056
+      "Shapecast": 18446605927840352248
     },
     "GuiBase2D": {
       "AbsolutePosition": 248,
@@ -137,7 +137,7 @@
     "Highlight": {
       "Adornee": 168,
       "DepthMode": 208,
-      "Enabled": 228,
+      "Enabled": 216,
       "FillColor": 184,
       "FillTransparency": 212,
       "OutlineColor": 196,
@@ -267,7 +267,14 @@
       "InputObject": 240
     },
     "Player": {
+      "AccountAge": 844,
       "Character": 648,
+      "DisplayName": 168,
+      "HealthDisplayDistance": 900,
+      "LocaleId": 1864,
+      "NameDisplayDistance": 916,
+      "Team": 712,
+      "TeamColor": 928,
       "UserId": 192
     },
     "Players": {
@@ -384,7 +391,7 @@
       "Text": 2976,
       "TextColor3": 3768,
       "TextDirection": 3416,
-      "TextScaled": 2953,
+      "TextScaled": 3502,
       "TextSize": 3804,
       "TextStrokeColor3": 3780,
       "TextStrokeTransparency": 3808,
