@@ -3,8 +3,8 @@
  * Created by: Jonah (jonahw on Discord)
  * Github: https://git.jonah.cool/jonah/roblox-dumper
  * Roblox Version: version-cec3ad5889b447cf
- * Time Taken: 36315 ms (36.315000 seconds)
- * Total Offsets: 322
+ * Time Taken: 37712 ms (37.712000 seconds)
+ * Total Offsets: 315
  */
 
 #pragma once
@@ -116,18 +116,18 @@ namespace offsets {
     }
 
     namespace Functions {
-        inline constexpr uintptr_t Clone = 0xFFFF825B68741318; // better to resolve at runtime via func descriptors
-        inline constexpr uintptr_t Destroy = 0xFFFF825B68741338; // better to resolve at runtime via func descriptors
-        inline constexpr uintptr_t FindPartOnRay = 0xFFFF825B688A0A18; // better to resolve at runtime via func descriptors
-        inline constexpr uintptr_t FindPartOnRayWithIgnoreList = 0xFFFF825B688A0A98; // better to resolve at runtime via func descriptors
-        inline constexpr uintptr_t FindPartOnRayWithWhitelist = 0xFFFF825B688A0AF8; // better to resolve at runtime via func descriptors
-        inline constexpr uintptr_t FireServer = 0xFFFF825B6879EF18; // better to resolve at runtime via func descriptors
+        inline constexpr uintptr_t Clone = 0xFFFF81EB8B541278; // better to resolve at runtime via func descriptors
+        inline constexpr uintptr_t Destroy = 0xFFFF81EB8B541298; // better to resolve at runtime via func descriptors
+        inline constexpr uintptr_t FindPartOnRay = 0xFFFF81EB8B620978; // better to resolve at runtime via func descriptors
+        inline constexpr uintptr_t FindPartOnRayWithIgnoreList = 0xFFFF81EB8B6209F8; // better to resolve at runtime via func descriptors
+        inline constexpr uintptr_t FindPartOnRayWithWhitelist = 0xFFFF81EB8B620A58; // better to resolve at runtime via func descriptors
+        inline constexpr uintptr_t FireServer = 0xFFFF81EB8B6BEE78; // better to resolve at runtime via func descriptors
         inline constexpr uintptr_t Print = 0x1C65A30;
         inline constexpr uintptr_t RaisePropertyChanged = 0xDEE980;
-        inline constexpr uintptr_t Raycast = 0xFFFF825B688A0758; // better to resolve at runtime via func descriptors
+        inline constexpr uintptr_t Raycast = 0xFFFF81EB8B6206B8; // better to resolve at runtime via func descriptors
         inline constexpr uintptr_t SetParent = 0xD00010;
         inline constexpr uintptr_t SetParentInternal = 0x1CAFEB0;
-        inline constexpr uintptr_t Shapecast = 0xFFFF825B688A07F8; // better to resolve at runtime via func descriptors
+        inline constexpr uintptr_t Shapecast = 0xFFFF81EB8B620758; // better to resolve at runtime via func descriptors
     }
 
     namespace GuiBase2D {
@@ -162,7 +162,7 @@ namespace offsets {
     namespace Highlight {
         inline constexpr uintptr_t Adornee = 0xA8;
         inline constexpr uintptr_t DepthMode = 0xD0;
-        inline constexpr uintptr_t Enabled = 0xD8;
+        inline constexpr uintptr_t Enabled = 0xE4;
         inline constexpr uintptr_t FillColor = 0xB8;
         inline constexpr uintptr_t FillTransparency = 0xD4;
         inline constexpr uintptr_t OutlineColor = 0xC4;
@@ -309,14 +309,7 @@ namespace offsets {
     }
 
     namespace Player {
-        inline constexpr uintptr_t AccountAge = 0x34C;
         inline constexpr uintptr_t Character = 0x288;
-        inline constexpr uintptr_t DisplayName = 0xA8; // harcoded
-        inline constexpr uintptr_t HealthDisplayDistance = 0x384;
-        inline constexpr uintptr_t LocaleId = 0x748;
-        inline constexpr uintptr_t NameDisplayDistance = 0x394;
-        inline constexpr uintptr_t Team = 0x2C8;
-        inline constexpr uintptr_t TeamColor = 0x3A0;
         inline constexpr uintptr_t UserId = 0xC0;
     }
 
@@ -448,7 +441,7 @@ namespace offsets {
         inline constexpr uintptr_t Text = 0xBA0;
         inline constexpr uintptr_t TextColor3 = 0xEB8;
         inline constexpr uintptr_t TextDirection = 0xD58;
-        inline constexpr uintptr_t TextScaled = 0xDAE;
+        inline constexpr uintptr_t TextScaled = 0xB89;
         inline constexpr uintptr_t TextSize = 0xEDC;
         inline constexpr uintptr_t TextStrokeColor3 = 0xEC4;
         inline constexpr uintptr_t TextStrokeTransparency = 0xEE0;
