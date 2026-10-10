@@ -2,8 +2,8 @@
 # Created by: Jonah (jonahw on Discord)
 # Github: https://git.jonah.cool/jonah/roblox-dumper
 # Roblox Version: version-cec3ad5889b447cf
-# Time Taken: 37712 ms (37.712000 seconds)
-# Total Offsets: 315
+# Time Taken: 36315 ms (36.315000 seconds)
+# Total Offsets: 322
 
 class Offsets:
     ROBLOX_VERSION = "version-cec3ad5889b447cf"
@@ -95,18 +95,18 @@ class Offsets:
         Function = 128
 
     class Functions:
-        Clone = 18446605447387681400
-        Destroy = 18446605447387681432
-        FindPartOnRay = 18446605447388596600
-        FindPartOnRayWithIgnoreList = 18446605447388596728
-        FindPartOnRayWithWhitelist = 18446605447388596824
-        FireServer = 18446605447389245048
+        Clone = 18446605927838913304
+        Destroy = 18446605927838913336
+        FindPartOnRay = 18446605927840352792
+        FindPartOnRayWithIgnoreList = 18446605927840352920
+        FindPartOnRayWithWhitelist = 18446605927840353016
+        FireServer = 18446605927839297304
         Print = 29776432
         RaisePropertyChanged = 14608768
-        Raycast = 18446605447388595896
+        Raycast = 18446605927840352088
         SetParent = 13631504
         SetParentInternal = 30080688
-        Shapecast = 18446605447388596056
+        Shapecast = 18446605927840352248
 
     class GuiBase2D:
         AbsolutePosition = 248
@@ -138,7 +138,7 @@ class Offsets:
     class Highlight:
         Adornee = 168
         DepthMode = 208
-        Enabled = 228
+        Enabled = 216
         FillColor = 184
         FillTransparency = 212
         OutlineColor = 196
@@ -268,7 +268,14 @@ class Offsets:
         InputObject = 240
 
     class Player:
+        AccountAge = 844
         Character = 648
+        DisplayName = 168
+        HealthDisplayDistance = 900
+        LocaleId = 1864
+        NameDisplayDistance = 916
+        Team = 712
+        TeamColor = 928
         UserId = 192
 
     class Players:
@@ -385,7 +392,7 @@ class Offsets:
         Text = 2976
         TextColor3 = 3768
         TextDirection = 3416
-        TextScaled = 2953
+        TextScaled = 3502
         TextSize = 3804
         TextStrokeColor3 = 3780
         TextStrokeTransparency = 3808
