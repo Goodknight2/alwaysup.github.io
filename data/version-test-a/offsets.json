@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "dumper": "roblox-dumper 3.6",
+    "author": "Jonah (jonahw on Discord)",
+    "github": "https://git.jonah.cool/jonah/roblox-dumper",
+    "roblox_version": "version-cec3ad5889b447cf",
+    "total_offsets": 5
+  },
+  "offsets": {
+    "FakeDataModel": {
+      "Pointer": 146603344
+    },
+    "VisualEngine": {
+      "Dimensions": 2832,
+      "Pointer": 140865088,
+      "RenderView": 3120,
+      "ViewMatrix": 432
+    }
+  },
+  "enums": {
+  }
+}
